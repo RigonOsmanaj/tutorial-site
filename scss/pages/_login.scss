@@ -1,0 +1,101 @@
+// _lgin.scss
+@use '../base/global';
+@use '../abstracts/global' as g;
+@use '../components/button';
+
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+
+    .title {
+        height: 120px;
+        background: g.$primary-color;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        padding: 25px 35px;
+
+        .row {
+            height: 60px;
+            margin-top: 15px;
+            position: relative;
+            
+            input {
+                height: 100%;
+                width: 100%;
+                outline: none;
+                padding-left: 70px;
+                border-radius: 5px;
+                border: 1px solid lightgrey;
+                font-size: 18px;
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    border-color: g.$primary-color;
+                }
+
+                &::placeholder {
+                    color: #999;
+                }
+            }
+
+            i {
+                position: absolute;
+                width: 55px;
+                height: 100%;
+                color: #fff;
+                font-size: 22px;
+                background: g.$primary-color;
+                border: 1px solid g.$primary-color;
+                border-radius: 5px 0 0 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .pass {
+            margin-top: 12px;
+            
+            a {
+                color: g.$primary-color;
+                font-size: 17px;
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .button {
+            // Button styles are handled in components/_button.scss
+            @extend .button;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 17px;
+
+            a {
+                color: g.$primary-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

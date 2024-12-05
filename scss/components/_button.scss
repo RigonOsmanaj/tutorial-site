@@ -1,0 +1,20 @@
+// _button.scss
+// calling all style from abstracts and base
+@use '../base/global'; 
+@use '../abstracts/variables' as v;
+
+.button{
+
+    input{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 0px;
+        background: v.$primary-color;
+        border: 1px solid v.$primary-color;
+        cursor: pointer;
+
+        &:hover{ background: v.$secondary-color;}
+    }
+}

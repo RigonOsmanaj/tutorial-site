@@ -1,0 +1,3 @@
+// importing _global.scss from the abstracts folder will now require only this file to be imported on other scss files simplyfing the process
+//@forward '../abstracts/global';
+@forward 'base.scss';

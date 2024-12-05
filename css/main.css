@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppinds", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -13,6 +13,20 @@ body {
   padding: 15px;
   background: #1abc9c;
   overflow: hidden;
+}
+
+.button input, .wrapper form .button input {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  cursor: pointer;
+}
+.button input:hover {
+  background: #1abc9c;
 }
 
 .wrapper {
@@ -49,7 +63,7 @@ body {
   border-radius: 5px;
   border: 1px solid lightgrey;
   font-size: 18px;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 .wrapper form .row input:focus {
   border-color: #16a085;
@@ -81,19 +95,6 @@ body {
 .wrapper form .pass a:hover {
   text-decoration: underline;
 }
-.wrapper form .button input {
-  margin-top: 20px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 0px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  cursor: pointer;
-}
-.wrapper form .button input:hover {
-  background: #1abc9c;
-}
 .wrapper form .signup-link {
   text-align: center;
   margin-top: 45px;
@@ -103,8 +104,8 @@ body {
   color: #16a085;
   text-decoration: none;
 }
-.wrapper form .signup-link:hover {
+.wrapper form .signup-link a:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

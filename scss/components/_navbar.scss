@@ -1,0 +1,58 @@
+@use '../abstracts/variables' as v;
+
+.navbar-inverse {
+    background-color: v.$navbar-bg;
+    border-color: v.$navbar-border-color;
+  
+    .navbar-brand {
+      color: v.$white;
+  
+      &:hover {
+        color: v.$highlight;
+      }
+    }
+  
+    .navbar-nav {
+      > li > a {
+        color: v.$white;
+  
+        &:hover,
+        &:focus {
+          color: v.$highlight;
+          background-color: v.$navbar-hover-bg;
+        }
+      }
+  
+      > .active > a,
+      > .open > a,
+      > .open > a:hover,
+      > .open > a:focus {
+        color: v.$highlight;
+        background-color: v.$navbar-bg;
+      }
+    }
+  
+    .navbar-nav > .dropdown > a .caret {
+      border-top-color: v.$white;
+      border-bottom-color: v.$white;
+  
+      &:hover {
+        border-top-color: v.$highlight;
+        border-bottom-color: v.$highlight;
+      }
+    }
+  }
+  
+  .dropdown-menu {
+    background-color: v.$dropdown-bg;
+  
+    > li > a {
+      color: v.$white;
+  
+      &:hover,
+      &:focus {
+        color: v.$highlight;
+        background-color: v.$dropdown-hover-bg;
+      }
+    }
+  }

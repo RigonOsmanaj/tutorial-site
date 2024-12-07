@@ -15,6 +15,18 @@ body {
   overflow: hidden;
 }
 
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar .nav {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
 .button, .wrapper form .button {
   display: flex; /* Make the button a flex container */
   justify-content: center; /* Center content horizontally */
@@ -116,6 +128,50 @@ body {
 }
 .wrapper form .signup-link a:hover {
   text-decoration: underline;
+}
+
+.navbar-inverse {
+  background-color: #003300;
+  border-color: #003300;
+}
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #FFCC00;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #FFCC00;
+  background-color: #002200;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #FFCC00;
+  background-color: #003300;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret:hover {
+  border-top-color: #FFCC00;
+  border-bottom-color: #FFCC00;
+}
+
+.dropdown-menu {
+  background-color: #006B00;
+}
+.dropdown-menu > li > a {
+  color: #FFFFFF;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #FFCC00;
+  background-color: #002200;
 }
 
 /*# sourceMappingURL=main.css.map */

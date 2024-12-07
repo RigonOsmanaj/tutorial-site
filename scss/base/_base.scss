@@ -16,3 +16,15 @@ body {
     background: variables.$secondary-color;
     overflow: hidden;
 }
+
+.navbar-brand {
+    font-family: variables.$font-montserrat;
+    text-transform: uppercase;
+  }
+  
+  .navbar .nav {
+    font-family: variables.$font-open-sans;
+    text-transform: uppercase;
+    letter-spacing: variables.$letter-spacing;
+    font-size: variables.$font-size-large;
+  }

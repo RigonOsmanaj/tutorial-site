@@ -1,11 +1,17 @@
 @use '../abstracts/variables' as v;
 
+.navbar-toggle {
+  background-color: black;
+}
+
 .navbar-inverse {
     background-color: v.$navbar-bg;
     border-color: v.$navbar-border-color;
+    padding: v.$navbar-padding;
   
     .navbar-brand {
-      color: v.$white;
+      color: v.$black_color;
+      font-weight: bold;
   
       &:hover {
         color: v.$highlight;
@@ -14,12 +20,13 @@
   
     .navbar-nav {
       > li > a {
-        color: v.$white;
+        color: v.$black_color;
+        font-weight: bold;
   
-        &:hover,
-        &:focus {
+        &:focus,
+        &:hover {
           color: v.$highlight;
-          background-color: v.$navbar-hover-bg;
+          // background-color: v.$navbar-hover-bg;
         }
       }
   
@@ -27,32 +34,11 @@
       > .open > a,
       > .open > a:hover,
       > .open > a:focus {
-        color: v.$highlight;
+        color: v.$black_color;
         background-color: v.$navbar-bg;
       }
     }
   
-    .navbar-nav > .dropdown > a .caret {
-      border-top-color: v.$white;
-      border-bottom-color: v.$white;
-  
-      &:hover {
-        border-top-color: v.$highlight;
-        border-bottom-color: v.$highlight;
-      }
-    }
+    
   }
   
-  .dropdown-menu {
-    background-color: v.$dropdown-bg;
-  
-    > li > a {
-      color: v.$white;
-  
-      &:hover,
-      &:focus {
-        color: v.$highlight;
-        background-color: v.$dropdown-hover-bg;
-      }
-    }
-  }

@@ -18,12 +18,12 @@ body {
 }
 
 .navbar-brand {
-    font-family: variables.$font-montserrat;
+    font-family: variables.$font-family;
     text-transform: uppercase;
   }
   
   .navbar .nav {
-    font-family: variables.$font-open-sans;
+    font-family: variables.$font-family;
     text-transform: uppercase;
     letter-spacing: variables.$letter-spacing;
     font-size: variables.$font-size-large;

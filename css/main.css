@@ -16,12 +16,12 @@ body {
 }
 
 .navbar-brand {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
 .navbar .nav {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1.2rem;
@@ -130,48 +130,35 @@ body {
   text-decoration: underline;
 }
 
+.navbar-toggle {
+  background-color: black;
+}
+
 .navbar-inverse {
-  background-color: #003300;
+  background-color: #FFFFFF;
   border-color: #003300;
+  padding: 15px;
 }
 .navbar-inverse .navbar-brand {
-  color: #FFFFFF;
+  color: #000000;
+  font-weight: bold;
 }
 .navbar-inverse .navbar-brand:hover {
-  color: #FFCC00;
+  color: #88e788;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #FFFFFF;
+  color: #000000;
+  font-weight: bold;
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #FFCC00;
-  background-color: #002200;
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #88e788;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  color: #FFCC00;
-  background-color: #003300;
-}
-.navbar-inverse .navbar-nav > .dropdown > a .caret {
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
-}
-.navbar-inverse .navbar-nav > .dropdown > a .caret:hover {
-  border-top-color: #FFCC00;
-  border-bottom-color: #FFCC00;
-}
-
-.dropdown-menu {
-  background-color: #006B00;
-}
-.dropdown-menu > li > a {
-  color: #FFFFFF;
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  color: #FFCC00;
-  background-color: #002200;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */

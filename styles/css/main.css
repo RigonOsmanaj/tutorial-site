@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #c6e9e2;
+  background: #dbf4ee;
   margin: 0;
 }
 
@@ -38,18 +38,18 @@ p {
   justify-content: center;
   height: 100vh;
   padding: 15px;
-  background: #c6e9e2;
+  background: #dbf4ee;
   overflow: hidden;
 }
 
 .button, .wrapper form .button {
-  display: flex; /* Make the button a flex container */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 100%; /* Ensure the button spans the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .button input, .wrapper form .button input {
-  display: inline-block; /* Makes the input an inline-block element */
+  display: inline-block;
   margin-top: 20px;
   color: #fff;
   font-size: 20px;
@@ -58,12 +58,12 @@ p {
   background: #16a085;
   border: 1px solid #16a085;
   cursor: pointer;
-  width: 100%; /* Ensure the button takes full width */
-  text-align: center; /* Center the text inside the input */
-  padding: 12px 20px; /* Adjust padding to size the button and center text properly */
+  width: 100%;
+  text-align: center;
+  padding: 12px 20px;
 }
 .button input:hover {
-  background: #c6e9e2;
+  background: #dbf4ee;
 }
 
 .wrapper {
@@ -175,8 +175,8 @@ p {
 }
 
 .jumbotron {
-  padding-top: 0; /* Remove the padding-top to avoid offset */
-  background-image: url("../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg");
+  padding-top: 0;
+  background-image: url("../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -185,8 +185,8 @@ p {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  justify-content: flex-start;
 }
 .jumbotron::before {
   content: "";
@@ -195,20 +195,19 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
-  z-index: 1; /* Ensures the overlay is below the text */
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 .jumbotron .container {
   position: relative;
-  z-index: 2; /* Ensures the text stays on top of the overlay */
+  z-index: 2;
 }
-.jumbotron .container h1,
-.jumbotron .container p {
+.jumbotron .container h1, .jumbotron .container p {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .about-us-section {
-  background-color: white;
+  background-color: #dbf4ee;
   padding: 50px 0;
 }
 .about-us-section h2 {
@@ -233,6 +232,39 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.destinations {
+  background-color: white;
+}
+
+.card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+  .card img {
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

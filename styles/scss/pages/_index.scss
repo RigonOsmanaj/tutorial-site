@@ -3,8 +3,8 @@
 @use '../components/navbar';
 
 .jumbotron {
-    padding-top: 0;  /* Remove the padding-top to avoid offset */
-    background-image: url('../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg');
+    padding-top: 0; 
+    background-image:url('../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,8 +14,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   
     display: flex;
-    align-items: center;  /* Vertically center the content */
-    justify-content: flex-start;  /* Align content to the left */
+    align-items: center;  
+    justify-content: flex-start; 
   
     &::before {
       content: '';
@@ -24,13 +24,13 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
-      z-index: 1; /* Ensures the overlay is below the text */
+      background: rgba(0, 0, 0, 0.4); 
+      z-index: 1; 
     }
   
     .container {
       position: relative;
-      z-index: 2; /* Ensures the text stays on top of the overlay */
+      z-index: 2; 
   
       h1,
       p {
@@ -44,17 +44,16 @@
 .about-us-section {
 
   h2 {
-    color: #000; // Black color for the heading
-    font-weight: 900; // Extra bold
-  }
+    color: #000; 
+    font-weight: 900; 
 
   p {
-    color: #000; // Black color for the paragraphs
-    font-weight: 300; // Bold
+    color: #000;
+    font-weight: 300; 
   }
 
   span.text-muted {
-    color: #555; // Slightly darker muted text
+    color: #555; 
     font-weight: 600;
   }
     background-color: white;  
@@ -75,4 +74,4 @@
     }
   }
   
-  
+}

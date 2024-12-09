@@ -175,7 +175,7 @@ p {
 }
 
 .jumbotron {
-  padding-top: 0; /* Remove the padding-top to avoid offset */
+  padding-top: 0;
   background-image: url("../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg");
   background-size: cover;
   background-position: center center;
@@ -185,8 +185,8 @@ p {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  justify-content: flex-start;
 }
 .jumbotron::before {
   content: "";
@@ -195,41 +195,39 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
-  z-index: 1; /* Ensures the overlay is below the text */
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 .jumbotron .container {
   position: relative;
-  z-index: 2; /* Ensures the text stays on top of the overlay */
+  z-index: 2;
 }
 .jumbotron .container h1,
 .jumbotron .container p {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-.about-us-section {
-  background-color: white;
-  padding: 50px 0;
-}
 .about-us-section h2 {
   color: #000;
   font-weight: 900;
+  background-color: white;
+  padding: 50px 0;
 }
-.about-us-section p {
+.about-us-section h2 p {
   color: #000;
   font-weight: 300;
 }
-.about-us-section span.text-muted {
+.about-us-section h2 span.text-muted {
   color: #555;
   font-weight: 600;
 }
-.about-us-section .about-img-container {
+.about-us-section h2 .about-img-container {
   border: 5px solid #ddd;
   border-radius: 15px;
   height: auto;
   overflow: hidden;
 }
-.about-us-section .about-img-container img {
+.about-us-section h2 .about-img-container img {
   width: 100%;
   height: auto;
   border-radius: 10px;

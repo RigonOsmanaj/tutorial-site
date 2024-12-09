@@ -2,9 +2,10 @@
 @use '../abstracts/global' as g;
 @use '../components/navbar';
 
+// Jumbotron Section Styles
 .jumbotron {
     padding-top: 0; 
-    background-image:url('../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg');
+    background-image: url('../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -32,20 +33,18 @@
       position: relative;
       z-index: 2; 
   
-      h1,
-      p {
+      h1, p {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
       }
     }
   }
 
 // About Us Section Background and Image Style
-
 .about-us-section {
-
   h2 {
     color: #000; 
     font-weight: 900; 
+  }
 
   p {
     color: #000;
@@ -56,22 +55,55 @@
     color: #555; 
     font-weight: 600;
   }
-    background-color: white;  
-    padding: 50px 0;            
-  
-    .about-img-container {
-      border: 5px solid #ddd;            
-      border-radius: 15px;             
-      height: auto;             
-      overflow: hidden;        
-  
-     
-      img {
-        width: 100%;           
-        height: auto;           
-        border-radius: 10px;    
-      }
+
+  background-color: g.$secondary-color;  
+  padding: 50px 0;            
+
+  .about-img-container {
+    border: 5px solid #ddd;            
+    border-radius: 15px;             
+    height: auto;             
+    overflow: hidden;        
+
+    img {
+      width: 100%;           
+      height: auto;           
+      border-radius: 10px;    
     }
   }
-  
+}
+
+.destinations {
+  background-color: white;
+}
+// Card Styles
+.card {
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+}
+
+.card img {
+  object-fit: cover; 
+  height: 200px; 
+  width: 100%; 
+}
+
+.card-body {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+
+  .card img {
+    height: 150px; 
+  }
 }

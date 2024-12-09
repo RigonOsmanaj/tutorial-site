@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #c6e9e2;
+  background: #dbf4ee;
   margin: 0;
 }
 
@@ -38,18 +38,18 @@ p {
   justify-content: center;
   height: 100vh;
   padding: 15px;
-  background: #c6e9e2;
+  background: #dbf4ee;
   overflow: hidden;
 }
 
 .button, .wrapper form .button {
-  display: flex; /* Make the button a flex container */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 100%; /* Ensure the button spans the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .button input, .wrapper form .button input {
-  display: inline-block; /* Makes the input an inline-block element */
+  display: inline-block;
   margin-top: 20px;
   color: #fff;
   font-size: 20px;
@@ -58,12 +58,12 @@ p {
   background: #16a085;
   border: 1px solid #16a085;
   cursor: pointer;
-  width: 100%; /* Ensure the button takes full width */
-  text-align: center; /* Center the text inside the input */
-  padding: 12px 20px; /* Adjust padding to size the button and center text properly */
+  width: 100%;
+  text-align: center;
+  padding: 12px 20px;
 }
 .button input:hover {
-  background: #c6e9e2;
+  background: #dbf4ee;
 }
 
 .wrapper {
@@ -207,7 +207,7 @@ p {
 }
 
 .about-us-section {
-  background-color: #c6e9e2;
+  background-color: #dbf4ee;
   padding: 50px 0;
 }
 .about-us-section h2 {

@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as v;
+@use "../abstracts/variables" as v;
 
 .navbar {
   &-light {
@@ -31,19 +31,7 @@
             color: v.$highlight;
           }
         }
-
-        
-        &.active .nav-link {
-          
-  
-          &:hover {
-            color: v.$highlight; 
-            background-color: v.$black_color; 
-          }
-        }
       }
     }
-
-    
   }
 }

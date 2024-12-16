@@ -1,74 +1,86 @@
-@use '../base/global';
-@use '../abstracts/global' as g;
-@use '../components/navbar';
+@use "../base/global";
+@use "../abstracts/global" as g;
+@use "../components/navbar";
 
 // Jumbotron Section Styles
 .jumbotron {
-    padding-top: 0; 
-    background-image: url('../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  
-    display: flex;
-    align-items: center;  
-    justify-content: flex-start; 
-  
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4); 
-      z-index: 1; 
-    }
-  
-    .container {
-      position: relative;
-      z-index: 2; 
-  
-      h1, p {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-      }
+  padding-top: 0;
+  background-image: url("../../../assets/nathan-anderson-prIk6PdCrgg-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    h1,
+    p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
   }
+}
+
+.footer-brand {
+  color: g.$black_color;
+  font-family: g.$font-family;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: g.$black_color;
+  }
+}
 
 // About Us Section Background and Image Style
 .about-us-section {
   h2 {
-    color: #000; 
-    font-weight: 900; 
+    color: #000;
+    font-weight: 900;
   }
 
   p {
     color: #000;
-    font-weight: 300; 
+    font-weight: 300;
   }
 
   span.text-muted {
-    color: #555; 
+    color: #555;
     font-weight: 600;
   }
 
-  background-color: g.$secondary-color;  
-  padding: 50px 0;            
+  background-color: g.$secondary-color;
+  padding: 50px 0;
 
   .about-img-container {
-    border: 5px solid #ddd;            
-    border-radius: 15px;             
-    height: auto;             
-    overflow: hidden;        
+    border: 5px solid #ddd;
+    border-radius: 15px;
+    height: auto;
+    overflow: hidden;
 
     img {
-      width: 100%;           
-      height: auto;           
-      border-radius: 10px;    
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
   }
 }
@@ -78,25 +90,24 @@
 }
 // Card Styles
 .card {
-  height: 400px; 
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .card img {
-  object-fit: cover; 
-  height: 200px; 
-  width: 100%; 
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
 }
 
 .card-body {
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-
 
 @media (max-width: 768px) {
   .card {
@@ -104,7 +115,6 @@
   }
 
   .card img {
-    height: 150px; 
+    height: 150px;
   }
 }
-

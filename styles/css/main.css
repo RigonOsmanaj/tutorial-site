@@ -32,7 +32,8 @@ p {
 }
 
 .login-page,
-.signup-page {
+.signup-page,
+.reset-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,21 +50,40 @@ p {
   width: 100%;
 }
 .button input, .wrapper form .button input {
-  display: inline-block;
   margin-top: 20px;
-  color: #fff;
   font-size: 20px;
   font-weight: 500;
-  padding-left: 0px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  cursor: pointer;
-  width: 100%;
   text-align: center;
+  width: 100%;
   padding: 12px 20px;
+  background-color: #16a085;
+  border-color: #16a085;
 }
 .button input:hover {
-  background: #dbf4ee;
+  background-color: #dbf4ee;
+  border-color: #dbf4ee;
+}
+
+.modal-content {
+  border: 1px solid #16a085;
+  background-color: #16a085;
+  color: #fff;
+}
+.modal-content .modal-header {
+  background-color: #16a085;
+  color: #fff;
+}
+.modal-content .modal-header .btn-close {
+  color: #fff;
+}
+.modal-content .modal-footer .btn-secondary {
+  background-color: #16a085;
+  border-color: #16a085;
+  color: #fff;
+}
+.modal-content .modal-footer .btn-secondary:hover {
+  background-color: rgb(19.8, 144, 119.7);
+  border-color: rgb(19.8, 144, 119.7);
 }
 
 .wrapper {
@@ -169,10 +189,6 @@ p {
 .navbar-light .navbar-nav .nav-item .nav-link:focus, .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: #88e788;
 }
-.navbar-light .navbar-nav .nav-item.active .nav-link:hover {
-  color: #88e788;
-  background-color: #000000;
-}
 
 .jumbotron {
   padding-top: 0;
@@ -202,8 +218,19 @@ p {
   position: relative;
   z-index: 2;
 }
-.jumbotron .container h1, .jumbotron .container p {
+.jumbotron .container h1,
+.jumbotron .container p {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.footer-brand {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-brand:hover {
+  color: #000000;
 }
 
 .about-us-section {
